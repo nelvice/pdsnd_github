@@ -10,7 +10,6 @@ months = ('january', 'february', 'march', 'april', 'may', 'june')
 
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday')
 
-# choose function
 def choose(prompt, choices=('y', 'n')):
     """Return a valid input from the user given an array of possible answers.
     """
@@ -35,7 +34,6 @@ def choose(prompt, choices=('y', 'n')):
 
     return choice
 
-# get filter function
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -78,7 +76,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#load data fuunction
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -149,7 +147,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# station stats
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
