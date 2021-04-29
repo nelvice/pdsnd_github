@@ -10,6 +10,7 @@ months = ('january', 'february', 'march', 'april', 'may', 'june')
 
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday')
 
+# choose function
 def choose(prompt, choices=('y', 'n')):
     """Return a valid input from the user given an array of possible answers.
     """
@@ -34,6 +35,7 @@ def choose(prompt, choices=('y', 'n')):
 
     return choice
 
+# get_filters function
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
